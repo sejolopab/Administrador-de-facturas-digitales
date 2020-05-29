@@ -27,12 +27,14 @@ class Utils {
         }
 
         fun getPurchaseHistoryWithTestData(): ArrayList<Purchase> {
+
             val storeList = getStoresTestData()
             val purchaseList = ArrayList<Purchase>()
             purchaseList.add(Purchase(storeList.get(0), "2-2-20",35))
             purchaseList.add(Purchase(storeList.get(0), "2-2-20",10))
             purchaseList.add(Purchase(storeList.get(1), "2-2-20",35))
-            return
+
+            return purchaseList
         }
     }
 }
